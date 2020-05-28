@@ -1,4 +1,4 @@
-# uptime-status
+# UptimeStatus
  一款基于UptimeRobot API的漂亮的网站监控面板。
 # 食用方式
 1. 下载或 clone 代码；
