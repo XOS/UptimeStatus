@@ -1,14 +1,13 @@
-# uptime-status
+# UptimeStatus
+ > 一款基于UptimeRobot API的漂亮的网站监控面板。
+## 食用方式
+1. 下载或 clone 代码；
+2. 第一次下载之后先执行 npm i 安装依赖；
+3. 改 src/config.js 中的 apikeys；
+4. 执行 npm run build 打包；
+5. 把 build 目录下的静态文件随便找个地方扔就完事了。
 
-一个基于 UptimeRobot API 的在线状态面板
-
-An uptime status dashboard based on UptimeRobot API
-
-------
-
-### 基于 Cloudflare Workers 搭建 UptimeRobot API 代理，以解决官网 API 跨域问题
-
-Build an UptimeRobot API proxy based on **Cloudflare Workers** to solve the cross-domain issue of official API
+## 基于 Cloudflare Workers 搭建 UptimeRobot API 代理，以解决官网 API 跨域问题
 
 ```
 const handleRequest = async ({ request }) => {
@@ -28,7 +27,4 @@ addEventListener('fetch', (event) => {
 });
 ```
 
-修改 `config.js` 中的 `ApiDomian` 为你的域名；
-
-Modify `ApiDomian` in `config.js` to your domain;
-
+* 修改 `config.js` 中的 `ApiDomian` 为你的域名。
